@@ -24,7 +24,7 @@ The chat command `/admin` opens an Admin menu, but it's clunky to use. Everythin
       <td>-</td>
     </tr>
     <tr>
-      <td><strong>Vote Crits</strong> (Random Crits)</td>
+      <td><strong>Vote Crits</strong><br />(Random Crits)</td>
       <td><code>/votecrits</code></td>
       <td><code>sm_votecrits</code></td>
       <td>Vote, Cvar</td>
@@ -68,35 +68,22 @@ The chat command `/admin` opens an Admin menu, but it's clunky to use. Everythin
 
 If you don't type out the entire map name, the game will choose the closest alphabetical match.
 
-### ✔️ No other matches
+Example, entering `/map badwater` will default to `pl_badwater`.
 
-```go
-/map badwater
-// => pl_badwater
-```
+### ❌ `harvest`
 
-The only other `badwater` match I have is `pl_badwater_pro`.
+> => `koth_harvest_event`
 
-### ❌ Multiple Matches Shorthand
-
-```go
-/map harvest
-// => koth_harvest_event
-```
-
-I have two matches for `harvest`.
+Alphabetically, the Harvest Halloween map comes first:
 
 1. **`koth_harvest_event`** (Halloween)
 1. **`koth_harvest_final`**
 
-### ❌ More Examples
+### ❌ `badlands`
 
-```go
-/map badlands
-// => arena_badlands
-```
+> => `arena_badlands`
 
-This will choose **`arena_badlands`**, because the alphabetical order is:
+Alphabetical order of `badlands` is:
 
 1. **`arena_badlands`**
 1. **`cp_badlands`**
