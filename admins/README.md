@@ -21,7 +21,10 @@ The chat command `/admin` opens an Admin menu, but it's clunky to use. Everythin
       <td>Ex: <code>sm_ban Shane wallhax</code></td>
     </tr>
     <tr>
-      <td><strong>Vote Crits</strong><br />(Random Crits)</td>
+      <td>
+        <strong>Vote Crits</strong><br />
+        (Random Crits)
+      </td>
       <td><code>/votecrits</code></td>
       <td><code>sm_votecrits</code></td>
     </tr>
@@ -31,17 +34,30 @@ The chat command `/admin` opens an Admin menu, but it's clunky to use. Everythin
       <td><code>sm_votescramble</code></td>
     </tr>
     <tr>
-      <td><strong>Set Next Map</strong></td>
+      <td>
+        <strong>
+          Set Next Map
+          <sup><a href="./#shorthand-map-names">[1]</a></sup>
+        </strong>
+      </td>
       <td><code>/setnextmap lakesize_final</code></td>
       <td><code>sm_setnextmap ...</code></td>
     </tr>
     <tr>
-      <td><strong>Change Map</strong></td>
+      <td>
+        <strong>
+          Change Map
+          <sup><a href="./#shorthand-map-names">[1]</a></sup>
+        </strong>
+      </td>
       <td><code>/map lakesize_final</code></td>
       <td><code>sm_map ...</code></td>
     </tr>
     <tr>
-      <td><strong>Vote Ad Lib</strong></td>
+      <td>
+        <strong>Vote Ad Lib</strong><br />
+        (Vote about anything)
+      </td>
       <td><code>/map question-one-word yes no maybe</code></td>
       <td><code>sm_vote "Switch map" Yes "I don't care"</code></td>
     </tr>
