@@ -20,8 +20,8 @@ The chat command `/admin` opens an Admin menu, but it's clunky to use. Everythin
     </tr>
     <tr>
       <td>Ex: <code>/ban @Shane wallhax</code></td>
-      <td>-</td>
-      <td>-</td>
+      <td>Ex: <code>sm_ban Shane wallhax</code></td>
+      <td></td>
     </tr>
     <tr>
       <td><strong>Vote Crits</strong><br />(Random Crits)</td>
