@@ -6,92 +6,108 @@ The chat command `/admin` opens an Admin menu, but it's clunky to use. Everythin
   <thead>
     <tr>
       <th>Command</th>
+      <th>Name</th>
       <th>Chat</th>
       <th>Console</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2"><strong>Ban Player</strong></td>
+      <td rowspan="2"><strong><code>sm_ban</code></strong></td>
+      <td rowspan="2">Ban Player</td>
       <td><code>/ban &lt;@name|steamid&gt; [minutes|0] &lt;reason&gt;</code></td>
-      <td><code>sm_ban &lt;name|steamid&gt; ...</code></td>
+      <td><code>sm_ban &lt;name|steamid&gt; [minutes|0] &lt;reason&gt;</code></td>
     </tr>
     <tr>
       <td>Ex: <code>/ban @Shane wallhax</code></td>
       <td>Ex: <code>sm_ban Shane wallhax</code></td>
     </tr>
     <tr>
+      <td><strong><code>sm_votecrits</code></strong></td>
       <td>
-        <strong>Vote Crits</strong><br />
-        (Random Crits)
+        Random Crits
       </td>
       <td><code>/votecrits</code></td>
       <td><code>sm_votecrits</code></td>
     </tr>
     <tr>
-      <td><strong>Vote Scramble</strong></td>
+      <td><strong><code>sm_votescramble</code></strong></td>
+      <td>Scramble Teams</td>
       <td><code>/votescramble</code></td>
       <td><code>sm_votescramble</code></td>
     </tr>
     <tr>
+      <td><strong><code>sm_setnextmap</code></strong></td>
       <td>
-        <strong>
           Set Next Map
-          <sup><a href="./#shorthand-map-names">[1]</a></sup>
-        </strong>
+          <sup><a href="#-shorthand-map-names">[1]</a></sup>
       </td>
-      <td><code>/setnextmap lakesize_final</code></td>
-      <td><code>sm_setnextmap ...</code></td>
+      <td><code>/setnextmap lakeside_final</code></td>
+      <td><code>sm_setnextmap lakeside_final</code></td>
     </tr>
     <tr>
+      <td><strong><code>sm_map</code></strong></td>
       <td>
-        <strong>
           Change Map
-          <sup><a href="./#shorthand-map-names">[1]</a></sup>
-        </strong>
+          <sup><a href="#-shorthand-map-names">[1]</a></sup>
       </td>
-      <td><code>/map lakesize_final</code></td>
-      <td><code>sm_map ...</code></td>
+      <td><code>/map lakeside_final</code></td>
+      <td><code>sm_map lakeside_final</code></td>
     </tr>
     <tr>
+      <td><strong><code>sm_votealltalk</code></strong></td>
+      <td>All Talk</td>
+      <td><code>/votealltalk</code></td>
+      <td><code>sm_votealltalk</code></td>
+    </tr>
+    <tr>
+      <td><strong><code>sm_vote</code></strong></td>
       <td>
-        <strong>Vote Ad Lib</strong><br />
+        Ad Lib Vote<br />
         (Vote about anything)
       </td>
       <td><code>/map question-one-word yes no maybe</code></td>
       <td><code>sm_vote "Switch map" Yes "I don't care"</code></td>
     </tr>
     <tr>
-      <td><strong>Admin Menu</strong></td>
+      <td><strong><code>sm_admin</code></strong></td>
+      <td>Admin Menu</td>
       <td><code>/admin</code></td>
       <td><code>sm_admin</code></td>
     </tr>
   </tbody>
 </table>
 
-# Tips
+# Risky Business
 
-## Shorthand Map Names
+<img src="https://hollywoodsuite.ca/wp-content/uploads/poster/HS900369_poster_1920_1080.jpg" height="40%" width="40%" />
 
-If you don't type out the entire map name, the game will choose the closest alphabetical match.
+## 🚧 Shorthand Map Names
 
-Example, entering `/map badwater` will default to `pl_badwater`.
+Game will choose the closest alphabetical match.
 
-### ❌ `harvest`
+### Example: **`/map badlands` ➡️ `arena_badlands`**
 
-> => `koth_harvest_event`
+Instead, use the full map name: **`/map cp_badlands`**
 
-Alphabetically, the Harvest Halloween map comes first:
+### ⚠️ `badlands`
 
-1. **`koth_harvest_event`** (Halloween)
-1. **`koth_harvest_final`**
-
-### ❌ `badlands`
-
-> => `arena_badlands`
-
-Alphabetical order of `badlands` is:
+Alphabetical order of **`badlands`**:
 
 1. **`arena_badlands`**
 1. **`cp_badlands`**
 1. **`koth_badlands`**
+
+### ⚠️ `harvest`
+
+Alphabetical order of **`harvest`**:
+
+1. **`koth_harvest_event`** (Halloween)
+1. **`koth_harvest_final`**
+
+### ⚠️ `lakeside`
+
+Alphabetical order of **`lakeside`**:
+
+1. **`koth_lakeside_event`** (Halloween)
+1. **`koth_lakeside_final`**
